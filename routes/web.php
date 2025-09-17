@@ -33,3 +33,4 @@ Route::get('/master-items/delete/{id}', [App\Http\Controllers\MasterItemsControl
 Route::get('/master-items/update-random-data', [App\Http\Controllers\MasterItemsController::class, 'updateRandomData']);
 
 Route::get('/kategori-items', [App\Http\Controllers\KategoriItemsController::class, 'index']);
+Route::get('/kategori-items/form/{method}/{id?}', [App\Http\Controllers\KategoriItemsController::class, 'formView']);
